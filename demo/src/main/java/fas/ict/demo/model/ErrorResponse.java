@@ -3,9 +3,12 @@ package fas.ict.demo.model;
 public class ErrorResponse {
     private int statusCode;
 	private String errorMessage;
-	public ErrorResponse() {
-		
-	}
+	
+    
+    public ErrorResponse(int statusCode, String errorMessage) {
+        this.statusCode = statusCode;
+        this.errorMessage = errorMessage;
+    }
     public int getStatusCode() {
         return statusCode;
     }
