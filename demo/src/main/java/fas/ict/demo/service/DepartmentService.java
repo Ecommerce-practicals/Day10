@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import fas.ict.demo.model.Department;
 import fas.ict.demo.repo.DepartmentRepository;
 import jakarta.persistence.EntityNotFoundException;
+
 @Service
 public class DepartmentService {
     @Autowired
