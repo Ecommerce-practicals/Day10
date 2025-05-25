@@ -18,4 +18,37 @@ public class Department {
 	private Date established;
 	@OneToMany(mappedBy = "department")
 	private List<Employee>employees;
+
+    public Department(int id, String name, Date established, List<Employee> employees) {
+        this.id = id;
+        this.name = name;
+        this.established = established;
+        this.employees = employees;
+    }
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public Date getEstablished() {
+        return established;
+    }
+    public void setEstablished(Date established) {
+        this.established = established;
+    }
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
+    }
+
+    
 }
